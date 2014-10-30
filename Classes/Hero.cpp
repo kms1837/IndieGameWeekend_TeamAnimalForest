@@ -120,8 +120,54 @@ void Hero::jumpProcess()
             
         case JUMPDOWN: { // down
             _jumpHeight -= _gravity;
-            if (_jumpHeight > _jumpStart) _gravity += JUMPACCELL;
-            else                          afterProcess();
+            
+            if(!_animeSwitch){
+                _body->stopAllActions();
+                
+                Vector<SpriteFrame*> jumpDownAnimaFrames(2);
+                for(int i=8; i<=9; i++){
+                    jumpDownAnimaFrames.pushBack(SpriteFrame::create(cocos2d::StringUtils::format("character/character1/jump/%d.png", i), Rect(0, 0, 190, 190)));
+                }
+                
+                auto characterJumpDownFrame   = Animation::createWithSpriteFrames(jumpDownAnimaFrames, 0.05f);
+                auto jumpDownAnimate          = Animate::create(characterJumpDownFrame);
+                
+                _body->runAction(jumpDownAnimate);
+                
+                _animeSwitch = true;
+            } //점프 추락중 애니메이션 재생
+            
+            if (_jumpHeight > _jumpStart){
+                _gravity += JUMPACCELL;
+            }else{
+                _body->stopAllActions();
+                
+                Vector<SpriteFrame*> animaFrames(6);
+                for(int i=10; i<=12; i++){
+                    animaFrames.pushBack(SpriteFrame::create(cocos2d::StringUtils::format("character/character1/jump/%d.png", i), Rect(0, 0, 190, 190)));
+                }
+                auto characterJumpEndFrame   = Animation::createWithSpriteFrames(animaFrames, 0.2f);
+                auto jumpEndAnimate          = Animate::create(characterJumpEndFrame);
+                //점프 종료 애니메이션
+                
+                if(_prevState != SLIDE && _prevState != ATTACK) {
+                    _state = _prevState;
+                    if(_velocity == 0) {
+                        _state = NORMAL;
+                        _speed = 0.72;
+                    }
+                }else{
+                    _state = MOVE;
+                }
+                
+                CallFunc* jumpEnded = CallFunc::create([&] (){
+                    _animeSwitch = false;
+                });
+                
+                _body->runAction(Sequence::create(jumpEndAnimate, jumpEnded, NULL));
+                
+                //afterProcess();
+            }
             
             break;
         }
@@ -286,9 +332,21 @@ void Hero::onJump(EventCustom* event)
         _prevState  = _state;
         _state      = JUMP;
         
-        _animeSwitch = false;
         _body->stopAllActions();
-        _body->setTexture("rockman_jump.png");
+        
+        Vector<SpriteFrame*> animaFrames(7);
+        
+        for(int i=1; i<=7; i++){
+            animaFrames.pushBack(SpriteFrame::create(cocos2d::StringUtils::format("character/character1/jump/%d.png", i), Rect(0, 0, 190, 190)));
+        }
+        auto characterJumpFrame  = Animation::createWithSpriteFrames(animaFrames, 0.06f);
+        auto jumpAnimate         = Animate::create(characterJumpFrame);
+        
+        _body->runAction(jumpAnimate);
+        
+        _animeSwitch = false;
+        
+        //_body->setTexture("rockman_jump.png");
     }
     CCLOG(__FUNCTION__);
 }

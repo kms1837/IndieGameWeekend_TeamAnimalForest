@@ -67,6 +67,8 @@
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
 		C31EE55C1A0247EB00E5E655 /* CreditScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */; };
 		C31EE55D1A0247EB00E5E655 /* CreditScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */; };
+		C3AD7FB21A02520500A4491B /* character in Resources */ = {isa = PBXBuildFile; fileRef = C3AD7FB11A02520500A4491B /* character */; };
+		C3AD7FB31A02520500A4491B /* character in Resources */ = {isa = PBXBuildFile; fileRef = C3AD7FB11A02520500A4491B /* character */; };
 		C3C429561A0185FB00F41D92 /* Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C429481A0185FB00F41D92 /* Collidable.cpp */; };
 		C3C429571A0185FB00F41D92 /* Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C429481A0185FB00F41D92 /* Collidable.cpp */; };
 		C3C429581A0185FB00F41D92 /* CollisionDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C4294A1A0185FB00F41D92 /* CollisionDetector.cpp */; };
@@ -127,8 +129,6 @@
 		C3C429EA1A0187BB00F41D92 /* Background2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C429BD1A0187BB00F41D92 /* Background2.png */; };
 		C3C429EB1A0187BB00F41D92 /* Bottom_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C429BE1A0187BB00F41D92 /* Bottom_logo.png */; };
 		C3C429EC1A0187BB00F41D92 /* Bottom_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C429BE1A0187BB00F41D92 /* Bottom_logo.png */; };
-		C3C429ED1A0187BB00F41D92 /* character in Resources */ = {isa = PBXBuildFile; fileRef = C3C429BF1A0187BB00F41D92 /* character */; };
-		C3C429EE1A0187BB00F41D92 /* character in Resources */ = {isa = PBXBuildFile; fileRef = C3C429BF1A0187BB00F41D92 /* character */; };
 		C3C429EF1A0187BB00F41D92 /* Characters in Resources */ = {isa = PBXBuildFile; fileRef = C3C429C01A0187BB00F41D92 /* Characters */; };
 		C3C429F01A0187BB00F41D92 /* Characters in Resources */ = {isa = PBXBuildFile; fileRef = C3C429C01A0187BB00F41D92 /* Characters */; };
 		C3C429F11A0187BB00F41D92 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C429C11A0187BB00F41D92 /* CloseNormal.png */; };
@@ -413,6 +413,7 @@
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CreditScene.cpp; path = ../Classes/CreditScene.cpp; sourceTree = "<group>"; };
 		C31EE55B1A0247EB00E5E655 /* CreditScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreditScene.h; path = ../Classes/CreditScene.h; sourceTree = "<group>"; };
+		C3AD7FB11A02520500A4491B /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; name = character; path = ../../../ProtoType/Resources/character; sourceTree = "<group>"; };
 		C3C429481A0185FB00F41D92 /* Collidable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Collidable.cpp; path = ../Classes/Collidable.cpp; sourceTree = "<group>"; };
 		C3C429491A0185FB00F41D92 /* Collidable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Collidable.h; path = ../Classes/Collidable.h; sourceTree = "<group>"; };
 		C3C4294A1A0185FB00F41D92 /* CollisionDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionDetector.cpp; path = ../Classes/CollisionDetector.cpp; sourceTree = "<group>"; };
@@ -471,7 +472,6 @@
 		C3C429BC1A0187BB00F41D92 /* Background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background1.png; sourceTree = "<group>"; };
 		C3C429BD1A0187BB00F41D92 /* Background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background2.png; sourceTree = "<group>"; };
 		C3C429BE1A0187BB00F41D92 /* Bottom_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bottom_logo.png; sourceTree = "<group>"; };
-		C3C429BF1A0187BB00F41D92 /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
 		C3C429C01A0187BB00F41D92 /* Characters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Characters; sourceTree = "<group>"; };
 		C3C429C11A0187BB00F41D92 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
 		C3C429C21A0187BB00F41D92 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
@@ -715,13 +715,13 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C3AD7FB11A02520500A4491B /* character */,
 				C3F001031A0229FF00C7B7EC /* credit.png */,
 				C3C42A431A01921200F41D92 /* ReadyMenuLayer.ccbi */,
 				C3C429BB1A0187BB00F41D92 /* Africa.jpg */,
 				C3C429BC1A0187BB00F41D92 /* Background1.png */,
 				C3C429BD1A0187BB00F41D92 /* Background2.png */,
 				C3C429BE1A0187BB00F41D92 /* Bottom_logo.png */,
-				C3C429BF1A0187BB00F41D92 /* character */,
 				C3C429C01A0187BB00F41D92 /* Characters */,
 				C3C429C11A0187BB00F41D92 /* CloseNormal.png */,
 				C3C429C21A0187BB00F41D92 /* CloseSelected.png */,
@@ -1047,11 +1047,11 @@
 				C3C429E91A0187BB00F41D92 /* Background2.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				C3C42A031A0187BB00F41D92 /* MainMenu in Resources */,
-				C3C429ED1A0187BB00F41D92 /* character in Resources */,
 				C3C42A0B1A0187BB00F41D92 /* Obstacles in Resources */,
 				C3C429FB1A0187BB00F41D92 /* Foreground.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
+				C3AD7FB21A02520500A4491B /* character in Resources */,
 				C3C429F71A0187BB00F41D92 /* CollectionScene.ccbi in Resources */,
 				C3C42A2F1A0187BB00F41D92 /* test in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
@@ -1104,12 +1104,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C42A241A0187BB00F41D92 /* Run in Resources */,
-				C3C429EE1A0187BB00F41D92 /* character in Resources */,
 				C3C42A201A0187BB00F41D92 /* rockman_run3.png in Resources */,
 				C3C42A021A0187BB00F41D92 /* HelloWorld.png in Resources */,
 				C3C429E61A0187BB00F41D92 /* Africa.jpg in Resources */,
 				C3C429F21A0187BB00F41D92 /* CloseNormal.png in Resources */,
 				C3C429FE1A0187BB00F41D92 /* gameMainTest_1 in Resources */,
+				C3AD7FB31A02520500A4491B /* character in Resources */,
 				C3C42A001A0187BB00F41D92 /* GameUi in Resources */,
 				C3C42A301A0187BB00F41D92 /* test in Resources */,
 				C3C429EA1A0187BB00F41D92 /* Background2.png in Resources */,
