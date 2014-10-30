@@ -1,9 +1,25 @@
 #include "HelloWorldScene.h"
 
 #include "Hero.h"
+#include "InfiniteParallaxNode.h"
 #include "GameJesture.h"
+#include "GameMap.h"
+#include "Logo.h"
+#include "cocostudio/CocoStudio.h"
 
 USING_NS_CC;
+
+HelloWorld::HelloWorld()
+{
+
+}
+
+HelloWorld::~HelloWorld()
+{
+	_gameMap->release();
+	delete _jesture;
+	delete _hero;
+}
 
 Scene* HelloWorld::createScene()
 {
@@ -32,14 +48,32 @@ bool HelloWorld::init()
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
-	_hero = new Hero();
-	_hero->registerEventListener();
-    _hero->create(this, visibleSize.width/2, visibleSize.height/2);
 
-	_jesture = new GameJesture();
-	_jesture->registerEventListener();
-    
+	//_jesture = new GameJesture();
+	//_jesture->registerEventListener();
+
+	//_gameMap = new GameMap();
+	//_gameMap->retain();
+
+	//_gameMap->registerEventListener();
+
+	//addChild(_gameMap->getBackground());
+	//addChild(_gameMap->getForeground());
+
+	//_hero = new Hero();
+	//_hero->registerEventListener();
+	//addChild(_hero->getHeroSprite());
+
+	//cocostudio::GUIReader *reader = cocostudio::GUIReader::getInstance();
+
+	//ui::Widget *widget = reader->widgetFromJsonFile("gameMainTest_1\gameMainTest_1.ExportJson");
+
+	//cocostudio::SceneReader *sceneReader = cocostudio::SceneReader::getInstance();
+	//Node *node = sceneReader->createNodeWithSceneFile("test\\DemoHead_UI\\DemoHead_UI.json");
+	//this->addChild(node);
+
+	
+
     return true;
 }
 

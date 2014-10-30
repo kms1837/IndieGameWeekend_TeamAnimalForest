@@ -1,0 +1,85 @@
+{
+	"Obstacles" :
+	[
+		{
+			"SensorPosition" : 2000,
+			"Kinds" :
+			[
+				{
+					"Name": "Penguin1",
+					"Position": 1000
+				}
+			]
+		},
+		{
+			"SensorPosition" : 4000,
+			"Kinds" :
+			[
+				{
+					"Name": "Seagull",
+					"Position": 1000
+				}
+			]
+		},
+		{
+			"SensorPosition" : 6000,
+			"Kinds" :
+			[
+				{
+					"Name": "Penguin2",
+					"Position": 1000
+				}
+			]
+		},
+		{
+			"SensorPosition" : 8000,
+			"Kinds" :
+			[
+				{
+					"Name": "Penguin3",
+					"Position": 1000
+				}
+			]
+		},
+		{
+			"SensorPosition" : 10000,
+			"Kinds" :
+			[
+				{
+					"Name": "Penguin4",
+					"Position": 1000
+				}
+			]
+		},
+		{
+			"SensorPosition" : 12000,
+			"Kinds" :
+			[
+				{
+					"Name": "Penguin5",
+					"Position": 1000
+				}
+			]
+		},
+		{
+			"SensorPosition" : 14000,
+			"Kinds" :
+			[
+				{
+					"Name": "Seaweed",
+					"Position": 1000
+				}
+			]
+		},
+		{
+			"SensorPosition" : 16000,
+			"Kinds" :
+			[
+				{
+					"Name": "Rock",
+					"Position": 1000
+				}
+			]
+		}
+	]
+}

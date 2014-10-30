@@ -5,11 +5,14 @@
 
 class Hero;
 class GameJesture;
+class GameMap;
 
 class HelloWorld : public cocos2d::Layer
 {
 
 public:
+	HelloWorld();
+	~HelloWorld();
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
 
@@ -25,6 +28,7 @@ public:
 private:
 	Hero *_hero;
 	GameJesture *_jesture;
+	GameMap *_gameMap;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

@@ -44,7 +44,13 @@ void GameJesture::registerEventListener()
 			Director *director = Director::getInstance();
 			EventDispatcher *eventDispatcher = director->getEventDispatcher();
 			eventDispatcher->dispatchEvent(&event);
-        }
+		}
+		else if (keyCode == EventKeyboard::KeyCode::KEY_Z) {
+			EventCustom event("zKey");
+			Director *director = Director::getInstance();
+			EventDispatcher *eventDispatcher = director->getEventDispatcher();
+			eventDispatcher->dispatchEvent(&event);
+		}
 	};
 	_keyboardEventListener->onKeyPressed = onKeyPressed;
 
