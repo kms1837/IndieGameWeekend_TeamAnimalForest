@@ -32,9 +32,6 @@ bool MainMenuScene::init()
     
     addChild(menu);
     
-    CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
-    CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("sound/TitleBGM.mp3", true);
-    
     return true;
 }
 
@@ -58,13 +55,16 @@ void MainMenuScene::menuTouchCallBack(cocos2d::CCObject *pSender)
     
     switch (pMenuItem->getTag()) {
         case 1: {
+            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
+            CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("sound/MainBGM.mp3", true);
+            
 			MapScene* gameScene = MapScene::create();
-            director->replaceScene(gameScene);
+            director->replaceScene(TransitionFade::create(1.0f, gameScene));
             break;
         }
         case 2:{
             Scene* creditScene = CreditScene::createScene();
-            director->replaceScene(creditScene);
+            director->replaceScene(TransitionFade::create(1.0f,creditScene));
             break;
         }
     }

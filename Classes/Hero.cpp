@@ -30,7 +30,7 @@ _prevState(NORMAL),
 _heroInfo(heroInfo)
 {
     _body = Sprite::create("character/character1/Wait.png");
-    _body->setPosition(Vec2(640, 200));
+    _body->setPosition(Vec2(640, 160));
     _body->retain();
     
     Director* director = Director::getInstance();

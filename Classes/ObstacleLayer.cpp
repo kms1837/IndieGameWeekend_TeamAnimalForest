@@ -42,7 +42,7 @@ void ObstacleLayer::generatePenguin(Penguin::Pattern pattern, float positionX)
 {
 	Director *director = Director::getInstance();
 	Size winSize = director->getWinSize();
-	Vec2 position = _layer->convertToNodeSpace(Vec2(winSize.width + positionX, 200.0f));
+	Vec2 position = _layer->convertToNodeSpace(Vec2(winSize.width + positionX, 130.0f));
 	Penguin *penguin = new Penguin();
 	Sprite *body = penguin->createPenguin(pattern);
 	_collisionDetector->addObstacles(penguin);
@@ -68,7 +68,7 @@ void ObstacleLayer::generateCrap(float positionX)
 {
 	Director *director = Director::getInstance();
 	Size winSize = director->getWinSize();
-	Vec2 position = _layer->convertToNodeSpace(Vec2(-100.0f, 200.0f));
+	Vec2 position = _layer->convertToNodeSpace(Vec2(-100.0f, 160.0f));
 	Crap *crap = new Crap();
 	_collisionDetector->addObstacles(crap);
 	Sprite *body = crap->createCrap();
@@ -81,7 +81,7 @@ void ObstacleLayer::generateSeaweed(float positionX)
 {
 	Director *director = Director::getInstance();
 	Size winSize = director->getWinSize();
-	Vec2 position = _layer->convertToNodeSpace(Vec2(winSize.width + positionX, 200.0f));
+	Vec2 position = _layer->convertToNodeSpace(Vec2(winSize.width + positionX, 80.0f));
 	Seaweed *seaweed = new Seaweed();
 	_collisionDetector->addObstacles(seaweed);
 	Sprite *body = seaweed->createSeaweed();

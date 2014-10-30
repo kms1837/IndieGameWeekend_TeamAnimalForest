@@ -65,10 +65,10 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
-		C31EE55C1A0247EB00E5E655 /* CreditScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */; };
-		C31EE55D1A0247EB00E5E655 /* CreditScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */; };
-		C3AD7FB21A02520500A4491B /* character in Resources */ = {isa = PBXBuildFile; fileRef = C3AD7FB11A02520500A4491B /* character */; };
-		C3AD7FB31A02520500A4491B /* character in Resources */ = {isa = PBXBuildFile; fileRef = C3AD7FB11A02520500A4491B /* character */; };
+		C309CE741A02797A0072AC78 /* CreditScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C309CE731A02797A0072AC78 /* CreditScene.cpp */; };
+		C309CE751A02797A0072AC78 /* CreditScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C309CE731A02797A0072AC78 /* CreditScene.cpp */; };
+		C3AD7FB51A025E7200A4491B /* character in Resources */ = {isa = PBXBuildFile; fileRef = C3AD7FB41A025E7200A4491B /* character */; };
+		C3AD7FB61A025E7200A4491B /* character in Resources */ = {isa = PBXBuildFile; fileRef = C3AD7FB41A025E7200A4491B /* character */; };
 		C3C429561A0185FB00F41D92 /* Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C429481A0185FB00F41D92 /* Collidable.cpp */; };
 		C3C429571A0185FB00F41D92 /* Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C429481A0185FB00F41D92 /* Collidable.cpp */; };
 		C3C429581A0185FB00F41D92 /* CollisionDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C4294A1A0185FB00F41D92 /* CollisionDetector.cpp */; };
@@ -411,9 +411,9 @@
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CreditScene.cpp; path = ../Classes/CreditScene.cpp; sourceTree = "<group>"; };
+		C309CE731A02797A0072AC78 /* CreditScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CreditScene.cpp; path = ../Classes/CreditScene.cpp; sourceTree = "<group>"; };
 		C31EE55B1A0247EB00E5E655 /* CreditScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreditScene.h; path = ../Classes/CreditScene.h; sourceTree = "<group>"; };
-		C3AD7FB11A02520500A4491B /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; name = character; path = ../../../ProtoType/Resources/character; sourceTree = "<group>"; };
+		C3AD7FB41A025E7200A4491B /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
 		C3C429481A0185FB00F41D92 /* Collidable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Collidable.cpp; path = ../Classes/Collidable.cpp; sourceTree = "<group>"; };
 		C3C429491A0185FB00F41D92 /* Collidable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Collidable.h; path = ../Classes/Collidable.h; sourceTree = "<group>"; };
 		C3C4294A1A0185FB00F41D92 /* CollisionDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionDetector.cpp; path = ../Classes/CollisionDetector.cpp; sourceTree = "<group>"; };
@@ -715,28 +715,33 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C3AD7FB11A02520500A4491B /* character */,
+				C3C429DD1A0187BB00F41D92 /* sound */,
+				C3C429DE1A0187BB00F41D92 /* Stage */,
+				C3C429E01A0187BB00F41D92 /* test */,
+				C3C429E41A0187BB00F41D92 /* UIResources */,
+				C3C429DA1A0187BB00F41D92 /* Run */,
+				C3C429C01A0187BB00F41D92 /* Characters */,
+				C3C429C51A0187BB00F41D92 /* fonts */,
+				C3C429C71A0187BB00F41D92 /* gameMainTest_1 */,
+				C3C429C81A0187BB00F41D92 /* GameUi */,
+				C3C429CA1A0187BB00F41D92 /* MainMenu */,
+				C3C429CC1A0187BB00F41D92 /* Map */,
+				C3C429CE1A0187BB00F41D92 /* Obstacles */,
+				C3AD7FB41A025E7200A4491B /* character */,
 				C3F001031A0229FF00C7B7EC /* credit.png */,
 				C3C42A431A01921200F41D92 /* ReadyMenuLayer.ccbi */,
 				C3C429BB1A0187BB00F41D92 /* Africa.jpg */,
 				C3C429BC1A0187BB00F41D92 /* Background1.png */,
 				C3C429BD1A0187BB00F41D92 /* Background2.png */,
 				C3C429BE1A0187BB00F41D92 /* Bottom_logo.png */,
-				C3C429C01A0187BB00F41D92 /* Characters */,
 				C3C429C11A0187BB00F41D92 /* CloseNormal.png */,
 				C3C429C21A0187BB00F41D92 /* CloseSelected.png */,
 				C3C429C31A0187BB00F41D92 /* collecsion_rhinoceros_1.png */,
 				C3C429C41A0187BB00F41D92 /* CollectionScene.ccbi */,
-				C3C429C51A0187BB00F41D92 /* fonts */,
 				C3C429C61A0187BB00F41D92 /* Foreground.png */,
-				C3C429C71A0187BB00F41D92 /* gameMainTest_1 */,
-				C3C429C81A0187BB00F41D92 /* GameUi */,
 				C3C429C91A0187BB00F41D92 /* HelloWorld.png */,
-				C3C429CA1A0187BB00F41D92 /* MainMenu */,
 				C3C429CB1A0187BB00F41D92 /* MainMenuScene.ccbi */,
-				C3C429CC1A0187BB00F41D92 /* Map */,
 				C3C429CD1A0187BB00F41D92 /* Middle_logo.png */,
-				C3C429CE1A0187BB00F41D92 /* Obstacles */,
 				C3C429CF1A0187BB00F41D92 /* PauseLayer.ccbi */,
 				C3C429D01A0187BB00F41D92 /* Penguin.png */,
 				C3C429D11A0187BB00F41D92 /* ResultLayer.ccbi */,
@@ -748,17 +753,12 @@
 				C3C429D71A0187BB00F41D92 /* rockman_run2.png */,
 				C3C429D81A0187BB00F41D92 /* rockman_run3.png */,
 				C3C429D91A0187BB00F41D92 /* rockman_slide.png */,
-				C3C429DA1A0187BB00F41D92 /* Run */,
 				C3C429DB1A0187BB00F41D92 /* seagull.png */,
 				C3C429DC1A0187BB00F41D92 /* Seaweed.png */,
-				C3C429DD1A0187BB00F41D92 /* sound */,
-				C3C429DE1A0187BB00F41D92 /* Stage */,
 				C3C429DF1A0187BB00F41D92 /* Stage1.json */,
-				C3C429E01A0187BB00F41D92 /* test */,
 				C3C429E11A0187BB00F41D92 /* TestRegion.png */,
 				C3C429E21A0187BB00F41D92 /* Top_logo.png */,
 				C3C429E31A0187BB00F41D92 /* Tree_logo.png */,
-				C3C429E41A0187BB00F41D92 /* UIResources */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -805,7 +805,7 @@
 				C3C429751A01861000F41D92 /* MainMenuScene.h */,
 				C3C429761A01861000F41D92 /* MapScene.cpp */,
 				C3C429771A01861000F41D92 /* MapScene.h */,
-				C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */,
+				C309CE731A02797A0072AC78 /* CreditScene.cpp */,
 				C31EE55B1A0247EB00E5E655 /* CreditScene.h */,
 			);
 			name = Scene;
@@ -1051,7 +1051,7 @@
 				C3C429FB1A0187BB00F41D92 /* Foreground.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
-				C3AD7FB21A02520500A4491B /* character in Resources */,
+				C3AD7FB51A025E7200A4491B /* character in Resources */,
 				C3C429F71A0187BB00F41D92 /* CollectionScene.ccbi in Resources */,
 				C3C42A2F1A0187BB00F41D92 /* test in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
@@ -1109,7 +1109,7 @@
 				C3C429E61A0187BB00F41D92 /* Africa.jpg in Resources */,
 				C3C429F21A0187BB00F41D92 /* CloseNormal.png in Resources */,
 				C3C429FE1A0187BB00F41D92 /* gameMainTest_1 in Resources */,
-				C3AD7FB31A02520500A4491B /* character in Resources */,
+				C3AD7FB61A025E7200A4491B /* character in Resources */,
 				C3C42A001A0187BB00F41D92 /* GameUi in Resources */,
 				C3C42A301A0187BB00F41D92 /* test in Resources */,
 				C3C429EA1A0187BB00F41D92 /* Background2.png in Resources */,
@@ -1165,7 +1165,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				C3C429A71A01861000F41D92 /* Penguin.cpp in Sources */,
 				C3C429991A01861000F41D92 /* JsonParser.cpp in Sources */,
-				C31EE55C1A0247EB00E5E655 /* CreditScene.cpp in Sources */,
+				C309CE741A02797A0072AC78 /* CreditScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				C3C429911A01861000F41D92 /* HeroInfo.cpp in Sources */,
 				C3C4295C1A0185FB00F41D92 /* GameJesture.cpp in Sources */,
@@ -1213,7 +1213,7 @@
 				C3F0010A1A023FF300C7B7EC /* Hero.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
 				C3C429A21A01861000F41D92 /* MapScrollView.cpp in Sources */,
-				C31EE55D1A0247EB00E5E655 /* CreditScene.cpp in Sources */,
+				C309CE751A02797A0072AC78 /* CreditScene.cpp in Sources */,
 				C3C429AA1A01861000F41D92 /* ReadyMenu.cpp in Sources */,
 				C3C42A421A01904400F41D92 /* ReadyMenuLayer.cpp in Sources */,
 				C3C429571A0185FB00F41D92 /* Collidable.cpp in Sources */,

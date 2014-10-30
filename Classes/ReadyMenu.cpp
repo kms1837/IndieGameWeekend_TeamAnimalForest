@@ -36,7 +36,7 @@ _heroMenu(nullptr)
 	{
 		GameScene *gameScene = GameScene::create(_regionInfo, _heroInfo);
 		Director *director = Director::getInstance();
-		director->replaceScene(gameScene);
+		director->replaceScene(TransitionFade::create(1.0f, gameScene));
 	};
     
 	Menu *startMenu = Menu::create(MenuItemImage::create("UIResources/Second_UI4.png",
@@ -60,6 +60,24 @@ _heroMenu(nullptr)
     backPicture->setOpacity(0);
     backPicture->runAction(Sequence::create(DelayTime::create(0.5f), FadeIn::create(0.3f), nullptr));
     _layer->addChild(backPicture);
+    
+    Sprite* totem = Sprite::create("UIResources/Second_CLOSE.png");
+    totem->setPosition(Vec2(381.0f, 404.0f));
+    totem->setOpacity(0);
+    totem->runAction(Sequence::create(DelayTime::create(0.5f), FadeIn::create(0.3f), nullptr));
+    _layer->addChild(totem);
+    
+    Sprite* stagePenel = Sprite::create("UIResources/Second_UI2.png");
+    stagePenel->setPosition(Vec2(380.0f, 624.0f));
+    stagePenel->setOpacity(0);
+    stagePenel->runAction(Sequence::create(DelayTime::create(0.5f), FadeIn::create(0.3f), nullptr));
+    _layer->addChild(stagePenel);
+    
+    Sprite* buttonPenel = Sprite::create("UIResources/Second_UI5.png");
+    buttonPenel->setPosition(Vec2(267.0f, 119.0f));
+    buttonPenel->setOpacity(0);
+    buttonPenel->runAction(Sequence::create(DelayTime::create(0.5f), FadeIn::create(0.3f), nullptr));
+    _layer->addChild(buttonPenel);
     
     std::function<void(Ref *ref)>
     moveCollectionScene = [this](Ref *ref)

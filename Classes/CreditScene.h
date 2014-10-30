@@ -13,7 +13,7 @@ public:
     CREATE_FUNC(CreditScene);
     
 private:
-    
+    bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event  *event);
 };
 
 #endif

@@ -81,9 +81,6 @@ bool MapScene::init()
 	scrollView->setBounceable(false);
 	addChild(scrollView);
     
-    CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
-    CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("sound/MainBGM.mp3", true);
-
 	return true;
 }
 

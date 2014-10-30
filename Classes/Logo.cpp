@@ -90,7 +90,11 @@ void Logo::update(float dt)
 		Scheduler *scheduler = director->getScheduler();
 		scheduler->unschedule(schedule_selector(Logo::update), this);
 		
+        CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
+        CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("sound/TitleBGM.mp3", true);
+        
 		MainMenuScene *scene = MainMenuScene::create();
-		director->replaceScene(scene->createScene());
+        
+		director->replaceScene(TransitionFade::create(1.0f, scene->createScene()));
 	}
 }

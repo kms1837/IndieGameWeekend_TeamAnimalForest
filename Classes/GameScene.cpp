@@ -59,12 +59,11 @@ bool GameScene::init()
 	_gameMap->registerEventListener();
 
 	addChild(_gameMap->getBackground());
-
-	_hero = new Hero(_heroInfo);
-	_hero->registerEventListener();
-	addChild(_hero->getHeroSprite());
-
 	addChild(_gameMap->getForeground());
+    
+    _hero = new Hero(_heroInfo);
+    _hero->registerEventListener();
+    addChild(_hero->getHeroSprite());
 
 	_collisionDetector = new CollisionDetector();
 	_collisionDetector->setHero(_hero);
@@ -74,12 +73,13 @@ bool GameScene::init()
 	_obstacleLayer->registerEventListener();
 
 	addChild(_obstacleLayer->getLayer());
-
+    
 	_uiLayer = new GameUiLayer();
 	addChild(_uiLayer->getLayer());
     
     CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
+    //CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("sound/rockman_ost.mp3");
     CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("sound/InGameBGM.mp3");
-
+    
 	return true;
 }

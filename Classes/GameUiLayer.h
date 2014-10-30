@@ -11,6 +11,7 @@ public:
 	cocos2d::Layer *getLayer() const { return _layer; }
 private:
 	cocos2d::Layer *_layer;
+    void pauseMenuCallback(cocos2d::Ref* pSender);
 };
 
 #endif // GameUiLayer_h__
