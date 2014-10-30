@@ -65,6 +65,8 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		C31EE55C1A0247EB00E5E655 /* CreditScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */; };
+		C31EE55D1A0247EB00E5E655 /* CreditScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */; };
 		C3C429561A0185FB00F41D92 /* Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C429481A0185FB00F41D92 /* Collidable.cpp */; };
 		C3C429571A0185FB00F41D92 /* Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C429481A0185FB00F41D92 /* Collidable.cpp */; };
 		C3C429581A0185FB00F41D92 /* CollisionDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C4294A1A0185FB00F41D92 /* CollisionDetector.cpp */; };
@@ -409,6 +411,8 @@
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CreditScene.cpp; path = ../Classes/CreditScene.cpp; sourceTree = "<group>"; };
+		C31EE55B1A0247EB00E5E655 /* CreditScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreditScene.h; path = ../Classes/CreditScene.h; sourceTree = "<group>"; };
 		C3C429481A0185FB00F41D92 /* Collidable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Collidable.cpp; path = ../Classes/Collidable.cpp; sourceTree = "<group>"; };
 		C3C429491A0185FB00F41D92 /* Collidable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Collidable.h; path = ../Classes/Collidable.h; sourceTree = "<group>"; };
 		C3C4294A1A0185FB00F41D92 /* CollisionDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionDetector.cpp; path = ../Classes/CollisionDetector.cpp; sourceTree = "<group>"; };
@@ -801,6 +805,8 @@
 				C3C429751A01861000F41D92 /* MainMenuScene.h */,
 				C3C429761A01861000F41D92 /* MapScene.cpp */,
 				C3C429771A01861000F41D92 /* MapScene.h */,
+				C31EE55A1A0247EB00E5E655 /* CreditScene.cpp */,
+				C31EE55B1A0247EB00E5E655 /* CreditScene.h */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -1159,6 +1165,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				C3C429A71A01861000F41D92 /* Penguin.cpp in Sources */,
 				C3C429991A01861000F41D92 /* JsonParser.cpp in Sources */,
+				C31EE55C1A0247EB00E5E655 /* CreditScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				C3C429911A01861000F41D92 /* HeroInfo.cpp in Sources */,
 				C3C4295C1A0185FB00F41D92 /* GameJesture.cpp in Sources */,
@@ -1206,6 +1213,7 @@
 				C3F0010A1A023FF300C7B7EC /* Hero.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
 				C3C429A21A01861000F41D92 /* MapScrollView.cpp in Sources */,
+				C31EE55D1A0247EB00E5E655 /* CreditScene.cpp in Sources */,
 				C3C429AA1A01861000F41D92 /* ReadyMenu.cpp in Sources */,
 				C3C42A421A01904400F41D92 /* ReadyMenuLayer.cpp in Sources */,
 				C3C429571A0185FB00F41D92 /* Collidable.cpp in Sources */,

@@ -1,5 +1,6 @@
 #include "MainMenuScene.h"
 #include "MapScene.h"
+#include "CreditScene.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -57,11 +58,13 @@ void MainMenuScene::menuTouchCallBack(cocos2d::CCObject *pSender)
     
     switch (pMenuItem->getTag()) {
         case 1: {
-			MapScene *gameScene = MapScene::create();
+			MapScene* gameScene = MapScene::create();
             director->replaceScene(gameScene);
             break;
         }
         case 2:{
+            Scene* creditScene = CreditScene::createScene();
+            director->replaceScene(creditScene);
             break;
         }
     }
