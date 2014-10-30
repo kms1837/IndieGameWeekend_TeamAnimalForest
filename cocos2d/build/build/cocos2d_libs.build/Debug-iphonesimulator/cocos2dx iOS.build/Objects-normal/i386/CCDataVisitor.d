@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/cocos/base/CCDataVisitor.cpp \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/base/CCRef.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/base/CCPlatformMacros.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/base/ccConfig.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/base/CCPlatformConfig.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/platform/ios/CCPlatformDefine.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/deprecated/CCBool.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/base/CCDataVisitor.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/deprecated/CCInteger.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/base/CCConsole.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/base/ccMacros.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/platform/ios/CCStdC.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/platform/CCCommon.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/deprecated/CCFloat.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/deprecated/CCDouble.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/deprecated/CCString.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/deprecated/CCArray.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/base/ccCArray.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/deprecated/CCDictionary.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/base/uthash.h \
+  /Users/kms/Development/workspace/cocos2d-x/ProtoType/cocos2d/build/../cocos/deprecated/CCSet.h

@@ -1,0 +1,598 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 1280,
+  "designHeight": 720,
+  "dataScale": 1.0,
+  "textures": [
+    "gameMainTest0.plist",
+    "gameMainTest1.plist",
+    "gameMainTest2.plist",
+    "gameMainTest3.plist"
+  ],
+  "texturesPng": [
+    "gameMainTest0.png",
+    "gameMainTest1.png",
+    "gameMainTest2.png",
+    "gameMainTest3.png"
+  ],
+  "nodeTree": {
+    "options": {
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "fileName": "Sample.png",
+          "fileNameData": {
+            "resourceType": 1,
+            "path": "Sample.png",
+            "plistFile": ""
+          },
+          "x": 640.0,
+          "y": 360.0,
+          "classType": "Sprite",
+          "actionTag": 538815246,
+          "tag": 205,
+          "name": "Sprite_1",
+          "classname": "Sprite"
+        },
+        "children": [],
+        "classname": "Sprite"
+      },
+      {
+        "options": {
+          "fileName": "Main.png",
+          "fileNameData": {
+            "resourceType": 1,
+            "path": "Main.png",
+            "plistFile": ""
+          },
+          "x": 640.0,
+          "y": 360.0,
+          "visible": true,
+          "classType": "Sprite",
+          "actionTag": 930932970,
+          "tag": 223,
+          "name": "BackGround",
+          "classname": "Sprite"
+        },
+        "children": [],
+        "classname": "Sprite"
+      },
+      {
+        "options": {
+          "fileName": "Cloud_1.png",
+          "fileNameData": {
+            "resourceType": 1,
+            "path": "Cloud_1.png",
+            "plistFile": ""
+          },
+          "x": -333.0,
+          "y": 641.0,
+          "visible": true,
+          "classType": "Sprite",
+          "actionTag": 850048271,
+          "tag": 206,
+          "name": "Cloud1",
+          "classname": "Sprite"
+        },
+        "children": [
+          {
+            "options": {
+              "fileName": "Cloud_2.png",
+              "fileNameData": {
+                "resourceType": 1,
+                "path": "Cloud_2.png",
+                "plistFile": ""
+              },
+              "x": 451.0,
+              "y": -54.0,
+              "visible": true,
+              "classType": "Sprite",
+              "actionTag": 209508917,
+              "tag": 224,
+              "name": "Cloud2",
+              "classname": "Sprite"
+            },
+            "children": [],
+            "classname": "Sprite"
+          },
+          {
+            "options": {
+              "fileName": "Cloud_3.png",
+              "fileNameData": {
+                "resourceType": 1,
+                "path": "Cloud_3.png",
+                "plistFile": ""
+              },
+              "x": 738.0,
+              "y": -247.0,
+              "visible": true,
+              "classType": "Sprite",
+              "actionTag": 531599471,
+              "tag": 226,
+              "name": "Cloud3",
+              "classname": "Sprite"
+            },
+            "children": [],
+            "classname": "Sprite"
+          },
+          {
+            "options": {
+              "fileName": "Cloud_r.png",
+              "fileNameData": {
+                "resourceType": 1,
+                "path": "Cloud_r.png",
+                "plistFile": ""
+              },
+              "x": 929.0,
+              "y": -7.0,
+              "visible": true,
+              "classType": "Sprite",
+              "actionTag": 501810974,
+              "tag": 227,
+              "name": "CloudBig",
+              "classname": "Sprite"
+            },
+            "children": [],
+            "classname": "Sprite"
+          },
+          {
+            "options": {
+              "fileName": "Cloud_1.png",
+              "fileNameData": {
+                "resourceType": 1,
+                "path": "Cloud_1.png",
+                "plistFile": ""
+              },
+              "x": 1510.0,
+              "y": 48.0,
+              "visible": true,
+              "classType": "Sprite",
+              "actionTag": 110867594,
+              "tag": 231,
+              "name": "subCloud",
+              "classname": "Sprite"
+            },
+            "children": [
+              {
+                "options": {
+                  "fileName": "Cloud_2.png",
+                  "fileNameData": {
+                    "resourceType": 1,
+                    "path": "Cloud_2.png",
+                    "plistFile": ""
+                  },
+                  "x": 451.0,
+                  "y": -54.0,
+                  "visible": true,
+                  "classType": "Sprite",
+                  "actionTag": 934147507,
+                  "tag": 232,
+                  "name": "Cloud2",
+                  "classname": "Sprite"
+                },
+                "children": [],
+                "classname": "Sprite"
+              },
+              {
+                "options": {
+                  "fileName": "Cloud_3.png",
+                  "fileNameData": {
+                    "resourceType": 1,
+                    "path": "Cloud_3.png",
+                    "plistFile": ""
+                  },
+                  "x": 738.0,
+                  "y": -247.0,
+                  "visible": true,
+                  "classType": "Sprite",
+                  "actionTag": 829466346,
+                  "tag": 233,
+                  "name": "Cloud3",
+                  "classname": "Sprite"
+                },
+                "children": [],
+                "classname": "Sprite"
+              },
+              {
+                "options": {
+                  "fileName": "Cloud_r.png",
+                  "fileNameData": {
+                    "resourceType": 1,
+                    "path": "Cloud_r.png",
+                    "plistFile": ""
+                  },
+                  "x": 929.0,
+                  "y": -7.0,
+                  "visible": true,
+                  "classType": "Sprite",
+                  "actionTag": 189390421,
+                  "tag": 234,
+                  "name": "CloudBig",
+                  "classname": "Sprite"
+                },
+                "children": [],
+                "classname": "Sprite"
+              },
+              {
+                "options": {
+                  "fileName": "Cloud_2.png",
+                  "fileNameData": {
+                    "resourceType": 1,
+                    "path": "Cloud_2.png",
+                    "plistFile": ""
+                  },
+                  "x": 451.0,
+                  "y": -55.0,
+                  "visible": true,
+                  "classType": "Sprite",
+                  "actionTag": 837853191,
+                  "tag": 235,
+                  "name": "Cloud2_sub",
+                  "classname": "Sprite"
+                },
+                "children": [],
+                "classname": "Sprite"
+              },
+              {
+                "options": {
+                  "fileName": "Cloud_3.png",
+                  "fileNameData": {
+                    "resourceType": 1,
+                    "path": "Cloud_3.png",
+                    "plistFile": ""
+                  },
+                  "x": 737.0,
+                  "y": -247.0,
+                  "visible": true,
+                  "classType": "Sprite",
+                  "actionTag": 326517152,
+                  "tag": 236,
+                  "name": "Cloud3_sub",
+                  "classname": "Sprite"
+                },
+                "children": [],
+                "classname": "Sprite"
+              },
+              {
+                "options": {
+                  "fileName": "Cloud_r.png",
+                  "fileNameData": {
+                    "resourceType": 1,
+                    "path": "Cloud_r.png",
+                    "plistFile": ""
+                  },
+                  "x": 929.0,
+                  "y": -7.0,
+                  "visible": true,
+                  "classType": "Sprite",
+                  "actionTag": 1057236813,
+                  "tag": 237,
+                  "name": "CloudBig_sub",
+                  "classname": "Sprite"
+                },
+                "children": [],
+                "classname": "Sprite"
+              }
+            ],
+            "classname": "Sprite"
+          }
+        ],
+        "classname": "Sprite"
+      },
+      {
+        "options": {
+          "fileName": "Title.png",
+          "fileNameData": {
+            "resourceType": 1,
+            "path": "Title.png",
+            "plistFile": ""
+          },
+          "x": 601.0,
+          "y": 515.0,
+          "visible": true,
+          "classType": "Sprite",
+          "actionTag": 1007590380,
+          "tag": 209,
+          "name": "Title",
+          "classname": "Sprite"
+        },
+        "children": [],
+        "classname": "Sprite"
+      },
+      {
+        "options": {
+          "normalData": {
+            "resourceType": 1,
+            "path": "Start.png",
+            "plistFile": ""
+          },
+          "pressedData": {
+            "resourceType": 1,
+            "path": "Start_2.png",
+            "plistFile": ""
+          },
+          "disabledData": {
+            "resourceType": 0
+          },
+          "text": "",
+          "capInsetsWidth": 1.0,
+          "capInsetsHeight": 1.0,
+          "scale9Width": 252.0,
+          "scale9Height": 93.0,
+          "x": 634.0,
+          "y": 277.0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Button",
+          "width": 252.0,
+          "height": 93.0,
+          "positionPercentX": 1.32083333,
+          "positionPercentY": 0.865625,
+          "sizePercentX": 0.214583337,
+          "sizePercentY": 0.125,
+          "useMergedTexture": true,
+          "actionTag": 41477058,
+          "tag": 211,
+          "ignoreSize": true,
+          "name": "StartButton",
+          "classname": "Button"
+        },
+        "children": [],
+        "classname": "Button"
+      },
+      {
+        "options": {
+          "normalData": {
+            "resourceType": 1,
+            "path": "Credit.png",
+            "plistFile": ""
+          },
+          "pressedData": {
+            "resourceType": 1,
+            "path": "Credit_2.png",
+            "plistFile": ""
+          },
+          "disabledData": {
+            "resourceType": 0
+          },
+          "text": "",
+          "capInsetsWidth": 1.0,
+          "capInsetsHeight": 1.0,
+          "scale9Width": 283.0,
+          "scale9Height": 94.0,
+          "x": 635.0,
+          "y": 184.0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Button",
+          "width": 283.0,
+          "height": 94.0,
+          "positionPercentX": 1.32291663,
+          "positionPercentY": 0.575,
+          "sizePercentX": 0.214583337,
+          "sizePercentY": 0.125,
+          "useMergedTexture": true,
+          "actionTag": 1017100404,
+          "tag": 212,
+          "ignoreSize": true,
+          "name": "CreditButton",
+          "classname": "Button"
+        },
+        "children": [],
+        "classname": "Button"
+      },
+      {
+        "options": {
+          "fileName": "Mountain.png",
+          "fileNameData": {
+            "resourceType": 1,
+            "path": "Mountain.png",
+            "plistFile": ""
+          },
+          "x": 637.0,
+          "y": 161.0,
+          "visible": true,
+          "classType": "Sprite",
+          "actionTag": 884032668,
+          "tag": 217,
+          "name": "mountain",
+          "classname": "Sprite"
+        },
+        "children": [],
+        "classname": "Sprite"
+      },
+      {
+        "options": {
+          "fileName": "Tree.png",
+          "fileNameData": {
+            "resourceType": 1,
+            "path": "Tree.png",
+            "plistFile": ""
+          },
+          "x": 635.0,
+          "y": 211.0,
+          "visible": true,
+          "classType": "Sprite",
+          "actionTag": 110171544,
+          "tag": 214,
+          "name": "Trees",
+          "classname": "Sprite"
+        },
+        "children": [],
+        "classname": "Sprite"
+      },
+      {
+        "options": {
+          "fileName": "Grass.png",
+          "fileNameData": {
+            "resourceType": 1,
+            "path": "Grass.png",
+            "plistFile": ""
+          },
+          "x": 638.0,
+          "y": 64.0,
+          "visible": true,
+          "classType": "Sprite",
+          "actionTag": 853282606,
+          "tag": 215,
+          "name": "Grass",
+          "classname": "Sprite"
+        },
+        "children": [],
+        "classname": "Sprite"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "duration": 712,
+    "speed": 1.0,
+    "timelines": [
+      {
+        "frameType": "PositionFrame",
+        "actionTag": 850048271,
+        "frames": [
+          {
+            "x": 191.0,
+            "y": 641.0,
+            "tween": true
+          },
+          {
+            "x": -1217.0,
+            "y": 641.0,
+            "frameIndex": 712,
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "ScaleFrame",
+        "actionTag": 850048271,
+        "frames": [
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "tween": true
+          },
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "frameIndex": 712,
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "RotationSkewFrame",
+        "actionTag": 850048271,
+        "frames": [
+          {
+            "tween": true
+          },
+          {
+            "frameIndex": 712,
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "PositionFrame",
+        "actionTag": 209508917,
+        "frames": [
+          {
+            "x": 451.0,
+            "y": -54.0,
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "ScaleFrame",
+        "actionTag": 209508917,
+        "frames": [
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "RotationSkewFrame",
+        "actionTag": 209508917,
+        "frames": [
+          {
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "PositionFrame",
+        "actionTag": 531599471,
+        "frames": [
+          {
+            "x": 738.0,
+            "y": -247.0,
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "ScaleFrame",
+        "actionTag": 531599471,
+        "frames": [
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "RotationSkewFrame",
+        "actionTag": 531599471,
+        "frames": [
+          {
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "PositionFrame",
+        "actionTag": 501810974,
+        "frames": [
+          {
+            "x": 929.0,
+            "y": -7.0,
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "ScaleFrame",
+        "actionTag": 501810974,
+        "frames": [
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "tween": true
+          }
+        ]
+      },
+      {
+        "frameType": "RotationSkewFrame",
+        "actionTag": 501810974,
+        "frames": [
+          {
+            "tween": true
+          }
+        ]
+      }
+    ]
+  }
+}
