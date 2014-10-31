@@ -1,17 +1,18 @@
 #include "Hero.h"
-
 #include "MapScene.h"
+#include "ResultLayer.h"
 
 using namespace cocos2d;
 
-const static int NORMAL = 1;
-const static int MOVE = 2;
-const static int JUMP = 3;
-const static int SLIDE = 4;
-const static int ATTACK = 5;
+const static int NORMAL     = 1;
+const static int MOVE       = 2;
+const static int JUMP       = 3;
+const static int SLIDE      = 4;
+const static int ATTACK     = 5;
+const static int COLLISION  = 6;
 
-const static int JUMPUP = 101;
-const static int JUMPDOWN = 102;
+const static int JUMPUP     = 101;
+const static int JUMPDOWN   = 102;
 
 const static float JUMPACCELL = 0.35f;
 
@@ -392,12 +393,46 @@ cocos2d::Rect Hero::getCollidableRect()  const
     return rect;
 }
 
+bool temp = false;
+
 void Hero::collide(CollideState state)
 {
-    if (state == CollideState::Fail) {
+    if (state == CollideState::Fail && !temp) {
+        
+        temp = true;
+        
+        _state = COLLISION;
+        
+        Vector<SpriteFrame*> animaFrames(5);
+        
+        for(int i=1; i<=5; i++){
+            animaFrames.pushBack(SpriteFrame::create(cocos2d::StringUtils::format("character/character1/collision/%d.png", i), Rect(0, 0, 190, 190)));
+        }
+        
+        auto characterCollisionFrame  = Animation::createWithSpriteFrames(animaFrames, 0.56f);
+        auto collisionAnimate         = Animate::create(characterCollisionFrame);
+        
+        CallFunc* collisionEnded = CallFunc::create([&] (){
+            Director *director = Director::getInstance();
+            Scene *scene = director->getRunningScene();
+            
+            cocosbuilder::NodeLoaderLibrary * nodeLoaderLibrary = cocosbuilder::NodeLoaderLibrary::newDefaultNodeLoaderLibrary();
+            nodeLoaderLibrary->registerNodeLoader("ResultLayer", ResultLayerBuilderLoader::loader());
+            cocosbuilder::CCBReader* ccbReader = new cocosbuilder::CCBReader(nodeLoaderLibrary);
+            auto node = ccbReader->readNodeGraphFromFile("ResultLayer.ccbi");
+            scene->addChild(node);
+        });
+        
+        
+        _animeSwitch = true;
+        
+        _body->stopAllActions();
+        _body->runAction(Sequence::create(collisionAnimate, collisionEnded, NULL));
+        
         /*
         Sprite *pauseBoard = Sprite::create("GameUi/popup_board2.png");
         
+         
         Sprite *exitNormal = Sprite::create("GameUi/popup_UI2.png");
         Sprite *exitSelected = Sprite::create("GameUi/popup_UI2.png");
         exitNormal->setScale(1.2);
